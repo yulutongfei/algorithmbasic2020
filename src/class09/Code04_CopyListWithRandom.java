@@ -1,7 +1,5 @@
 package class09;
 
-import java.util.HashMap;
-
 public class Code04_CopyListWithRandom {
 
     public static class Node {
@@ -15,12 +13,12 @@ public class Code04_CopyListWithRandom {
     }
 
     public static Node copyListWithRand1(Node head) {
-        // todo 自己动手写！！！
+        // practice
         return null;
     }
 
     public static Node copyListWithRand2(Node head) {
-        // todo 自己动手写！！！
+        // practice
         return null;
     }
 

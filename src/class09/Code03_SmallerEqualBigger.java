@@ -58,7 +58,7 @@ public class Code03_SmallerEqualBigger {
     }
 
     public static Node listPartition2(Node head, int pivot) {
-        // todo 自己动手写！！！
+        // practice
         return null;
     }
 
