@@ -4,9 +4,13 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 二叉树最大宽度
+ */
 public class Code05_TreeMaxWidth {
 
     public static class Node {
+
         public int value;
         public Node left;
         public Node right;
@@ -25,8 +29,10 @@ public class Code05_TreeMaxWidth {
         // key 在 哪一层，value
         HashMap<Node, Integer> levelMap = new HashMap<>();
         levelMap.put(head, 1);
-        int curLevel = 1; // 当前你正在统计哪一层的宽度
-        int curLevelNodes = 0; // 当前层curLevel层，宽度目前是多少
+        // 当前你正在统计哪一层的宽度
+        int curLevel = 1;
+        // 当前层curLevel层，宽度目前是多少
+        int curLevelNodes = 0;
         int max = 0;
         while (!queue.isEmpty()) {
             Node cur = queue.poll();
@@ -40,13 +46,18 @@ public class Code05_TreeMaxWidth {
                 queue.add(cur.right);
             }
             if (curNodeLevel == curLevel) {
+                // 当前层没有过期
                 curLevelNodes++;
             } else {
+                // 新层开始了
+                // 第1层到第2层,要结算max了
                 max = Math.max(max, curLevelNodes);
                 curLevel++;
+                // 此时当前层第一个节点已经弹出了
                 curLevelNodes = 1;
             }
         }
+        // 最后一层要单独更新一次max
         max = Math.max(max, curLevelNodes);
         return max;
     }

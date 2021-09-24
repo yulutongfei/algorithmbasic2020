@@ -3,9 +3,13 @@ package class11;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 二叉树按层遍历
+ */
 public class Code01_LevelTraversalBT {
 
     public static class Node {
+
         public int value;
         public Node left;
         public Node right;

@@ -75,6 +75,11 @@ public class Code03_UnRecursiveTraversalBT {
         System.out.println();
     }
 
+    /**
+     * 先处理左子树,在处理右子树,再处理头节点
+     *
+     * @param h
+     */
     public static void pos2(Node h) {
         System.out.print("pos-order: ");
         if (h != null) {
@@ -89,6 +94,7 @@ public class Code03_UnRecursiveTraversalBT {
                     stack.push(c.right);
                 } else {
                     System.out.print(stack.pop().value + " ");
+                    // h代表上次打印的节点
                     h = c;
                 }
             }

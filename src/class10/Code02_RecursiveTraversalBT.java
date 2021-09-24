@@ -1,8 +1,12 @@
 package class10;
 
+/**
+ * 递归方式实现二叉树的先序,中序,后序打印
+ */
 public class Code02_RecursiveTraversalBT {
 
     public static class Node {
+
         public int value;
         public Node left;
         public Node right;
