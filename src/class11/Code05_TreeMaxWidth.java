@@ -68,10 +68,13 @@ public class Code05_TreeMaxWidth {
         }
         Queue<Node> queue = new LinkedList<>();
         queue.add(head);
-        Node curEnd = head; // 当前层，最右节点是谁
-        Node nextEnd = null; // 下一层，最右节点是谁
+        // 当前层，最右节点是谁
+        Node curEnd = head;
+        // 下一层，最右节点是谁
+        Node nextEnd = null;
         int max = 0;
-        int curLevelNodes = 0; // 当前层的节点数
+        // 当前层的节点数
+        int curLevelNodes = 0;
         while (!queue.isEmpty()) {
             Node cur = queue.poll();
             if (cur.left != null) {
