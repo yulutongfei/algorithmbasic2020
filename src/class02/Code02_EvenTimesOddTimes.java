@@ -26,7 +26,7 @@ public class Code02_EvenTimesOddTimes {
 
 
         int onlyOne = 0; // eor'
-        for (int i = 0 ; i < arr.length;i++) {
+        for (int i = 0; i < arr.length; i++) {
             //  arr[1] =  111100011110000
             // rightOne=  000000000010000
             if ((arr[i] & rightOne) != 0) {
@@ -47,8 +47,7 @@ public class Code02_EvenTimesOddTimes {
         //
 
 
-
-        while(N != 0) {
+        while (N != 0) {
             int rightOne = N & ((~N) + 1);
             count++;
             N ^= rightOne;
@@ -72,10 +71,10 @@ public class Code02_EvenTimesOddTimes {
         System.out.println(a);
         System.out.println(b);
 
-        int[] arr1 = { 3, 3, 2, 3, 1, 1, 1, 3, 1, 1, 1 };
+        int[] arr1 = {3, 3, 2, 3, 1, 1, 1, 3, 1, 1, 1};
         printOddTimesNum1(arr1);
 
-        int[] arr2 = { 4, 3, 4, 2, 2, 2, 4, 1, 1, 1, 3, 3, 1, 1, 1, 4, 2, 2 };
+        int[] arr2 = {4, 3, 4, 2, 2, 2, 4, 1, 1, 1, 3, 3, 1, 1, 1, 4, 2, 2};
         printOddTimesNum2(arr2);
 
     }

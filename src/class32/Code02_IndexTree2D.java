@@ -4,6 +4,7 @@ package class32;
 // 但这个题是付费题目
 // 提交时把类名、构造函数名从Code02_IndexTree2D改成NumMatrix
 public class Code02_IndexTree2D {
+
     private int[][] tree;
     private int[][] nums;
     private int N;

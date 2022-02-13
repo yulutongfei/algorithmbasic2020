@@ -5,6 +5,7 @@ import java.util.Stack;
 public class Code05_GetMinStack {
 
     public static class MyStack1 {
+
         private Stack<Integer> stackData;
         private Stack<Integer> stackMin;
 
@@ -42,6 +43,7 @@ public class Code05_GetMinStack {
     }
 
     public static class MyStack2 {
+
         private Stack<Integer> stackData;
         private Stack<Integer> stackMin;
 

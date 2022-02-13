@@ -15,6 +15,7 @@ import java.util.Scanner;
 public class Code03_DinicAlgorithm {
 
     public static class Edge {
+
         public int from;
         public int to;
         public int available;
@@ -27,6 +28,7 @@ public class Code03_DinicAlgorithm {
     }
 
     public static class Dinic {
+
         private int N;
         private ArrayList<ArrayList<Integer>> nexts;
         private ArrayList<Edge> edges;

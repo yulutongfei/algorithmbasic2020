@@ -41,9 +41,9 @@ public class Code02_FibonacciProblem {
         // [ 1 ,1 ]
         // [ 1, 0 ]
         int[][] base = {
-                { 1, 1 },
-                { 1, 0 }
-                };
+                {1, 1},
+                {1, 0}
+        };
         int[][] res = matrixPower(base, n - 2);
         return res[0][0] + res[1][0];
     }
@@ -112,7 +112,7 @@ public class Code02_FibonacciProblem {
         if (n == 1 || n == 2) {
             return n;
         }
-        int[][] base = { { 1, 1 }, { 1, 0 } };
+        int[][] base = {{1, 1}, {1, 0}};
         int[][] res = matrixPower(base, n - 2);
         return 2 * res[0][0] + res[1][0];
     }
@@ -157,9 +157,9 @@ public class Code02_FibonacciProblem {
             return n;
         }
         int[][] base = {
-                { 1, 1, 0 },
-                { 0, 0, 1 },
-                { 1, 0, 0 } };
+                {1, 1, 0},
+                {0, 0, 1},
+                {1, 0, 0}};
         int[][] res = matrixPower(base, n - 3);
         return 3 * res[0][0] + 2 * res[1][0] + res[2][0];
     }

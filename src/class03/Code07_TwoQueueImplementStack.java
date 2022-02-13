@@ -7,6 +7,7 @@ import java.util.Stack;
 public class Code07_TwoQueueImplementStack {
 
     public static class TwoQueueStack<T> {
+
         public Queue<T> queue;
         public Queue<T> help;
 

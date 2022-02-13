@@ -10,7 +10,7 @@ public class Code02_RemoveBoxes {
             return 0;
         }
         int ans = func1(arr, L + 1, R, 0) + (K + 1) * (K + 1);
-        
+
         // 前面的K个X，和arr[L]数，合在一起了，现在有K+1个arr[L]位置的数
         for (int i = L + 1; i <= R; i++) {
             if (arr[i] == arr[L]) {

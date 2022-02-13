@@ -87,6 +87,7 @@ public class Code02_Hanoi {
     }
 
     public static class Record {
+
         public boolean finish1;
         public int base;
         public String from;

@@ -45,6 +45,7 @@ public class Code06_Dijkstra {
     }
 
     public static class NodeRecord {
+
         public Node node;
         public int distance;
 
@@ -55,6 +56,7 @@ public class Code06_Dijkstra {
     }
 
     public static class NodeHeap {
+
         private Node[] nodes; // 实际的堆结构
         // key 某一个node， value 上面堆中的位置
         private HashMap<Node, Integer> heapIndexMap;

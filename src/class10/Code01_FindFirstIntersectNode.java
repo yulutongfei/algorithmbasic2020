@@ -3,6 +3,7 @@ package class10;
 public class Code01_FindFirstIntersectNode {
 
     public static class Node {
+
         public int value;
         public Node next;
 

@@ -3,6 +3,7 @@ package class09;
 public class Code03_SmallerEqualBigger {
 
     public static class Node {
+
         public int value;
         public Node next;
 

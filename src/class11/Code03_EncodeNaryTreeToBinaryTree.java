@@ -8,6 +8,7 @@ public class Code03_EncodeNaryTreeToBinaryTree {
 
     // 提交时不要提交这个类
     public static class Node {
+
         public int val;
         public List<Node> children;
 
@@ -22,10 +23,13 @@ public class Code03_EncodeNaryTreeToBinaryTree {
             val = _val;
             children = _children;
         }
-    };
+    }
+
+    ;
 
     // 提交时不要提交这个类
     public static class TreeNode {
+
         int val;
         TreeNode left;
         TreeNode right;
@@ -37,6 +41,7 @@ public class Code03_EncodeNaryTreeToBinaryTree {
 
     // 只提交这个类即可
     class Codec {
+
         // Encodes an n-ary tree to a binary tree.
         public TreeNode encode(Node root) {
             if (root == null) {

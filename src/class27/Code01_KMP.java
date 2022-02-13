@@ -28,7 +28,7 @@ public class Code01_KMP {
 
     public static int[] getNextArray(char[] str2) {
         if (str2.length == 1) {
-            return new int[] { -1 };
+            return new int[]{-1};
         }
         int[] next = new int[str2.length];
         next[0] = -1;

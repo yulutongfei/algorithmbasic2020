@@ -24,18 +24,18 @@ public class Code04_BSExist {
         }
         return sortedArr[L] == num;
     }
-    
+
     // for test
     public static boolean test(int[] sortedArr, int num) {
-        for(int cur : sortedArr) {
-            if(cur == num) {
+        for (int cur : sortedArr) {
+            if (cur == num) {
                 return true;
             }
         }
         return false;
     }
-    
-    
+
+
     // for test
     public static int[] generateRandomArray(int maxSize, int maxValue) {
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];
@@ -44,7 +44,7 @@ public class Code04_BSExist {
         }
         return arr;
     }
-    
+
     public static void main(String[] args) {
         int testTime = 500000;
         int maxSize = 10;

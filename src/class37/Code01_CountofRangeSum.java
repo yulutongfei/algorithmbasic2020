@@ -7,14 +7,16 @@ public class Code01_CountofRangeSum {
     public static int countRangeSum1(int[] nums, int lower, int upper) {
         int n = nums.length;
         long[] sums = new long[n + 1];
-        for (int i = 0; i < n; ++i)
+        for (int i = 0; i < n; ++i) {
             sums[i + 1] = sums[i] + nums[i];
+        }
         return countWhileMergeSort(sums, 0, n + 1, lower, upper);
     }
 
     private static int countWhileMergeSort(long[] sums, int start, int end, int lower, int upper) {
-        if (end - start <= 1)
+        if (end - start <= 1) {
             return 0;
+        }
         int mid = (start + end) / 2;
         int count = countWhileMergeSort(sums, start, mid, lower, upper)
                 + countWhileMergeSort(sums, mid, end, lower, upper);
@@ -35,6 +37,7 @@ public class Code01_CountofRangeSum {
     }
 
     public static class SBTNode {
+
         public long key;
         public SBTNode l;
         public SBTNode r;
@@ -49,6 +52,7 @@ public class Code01_CountofRangeSum {
     }
 
     public static class SizeBalancedTreeSet {
+
         private SBTNode root;
         private HashSet<Long> set = new HashSet<>();
 

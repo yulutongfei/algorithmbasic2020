@@ -8,6 +8,7 @@ import java.util.TreeSet;
 public class Code02_FallingSquares {
 
     public static class SegmentTree {
+
         private int[] max;
         private int[] change;
         private boolean[] update;

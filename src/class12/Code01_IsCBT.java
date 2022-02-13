@@ -4,16 +4,6 @@ import java.util.LinkedList;
 
 public class Code01_IsCBT {
 
-    public static class Node {
-        public int value;
-        public Node left;
-        public Node right;
-
-        public Node(int data) {
-            this.value = data;
-        }
-    }
-
     public static boolean isCBT1(Node head) {
         if (head == null) {
             return true;
@@ -29,10 +19,10 @@ public class Code01_IsCBT {
             l = head.left;
             r = head.right;
             if (
-            // 如果遇到了不双全的节点之后，又发现当前节点不是叶节点
-                (leaf && (l != null || r != null))
-                ||
-                (l == null && r != null)
+                // 如果遇到了不双全的节点之后，又发现当前节点不是叶节点
+                    (leaf && (l != null || r != null))
+                            ||
+                            (l == null && r != null)
 
             ) {
                 return false;
@@ -50,6 +40,17 @@ public class Code01_IsCBT {
         return true;
     }
 
+    public static class Node {
+
+        public int value;
+        public Node left;
+        public Node right;
+
+        public Node(int data) {
+            this.value = data;
+        }
+    }
+
     public static boolean isCBT2(Node head) {
         if (head == null) {
             return true;
@@ -59,6 +60,7 @@ public class Code01_IsCBT {
 
     // 对每一棵子树，是否是满二叉树、是否是完全二叉树、高度
     public static class Info {
+
         public boolean isFull;
         public boolean isCBT;
         public int height;
@@ -76,7 +78,6 @@ public class Code01_IsCBT {
         }
         Info leftInfo = process(X.left);
         Info rightInfo = process(X.right);
-
 
 
         int height = Math.max(leftInfo.height, rightInfo.height) + 1;

@@ -5,7 +5,69 @@ import java.util.PriorityQueue;
 
 public class Code02_Heap {
 
+    public static void main(String[] args) {
+        // 小根堆
+        PriorityQueue<Integer> heap = new PriorityQueue<>(new MyComparator());
+        heap.add(5);
+        heap.add(5);
+        heap.add(5);
+        heap.add(3);
+        //  5 , 3
+        System.out.println(heap.peek());
+        heap.add(7);
+        heap.add(0);
+        heap.add(7);
+        heap.add(0);
+        heap.add(7);
+        heap.add(0);
+        System.out.println(heap.peek());
+        while (!heap.isEmpty()) {
+            System.out.println(heap.poll());
+        }
+
+
+        int value = 1000;
+        int limit = 100;
+        int testTimes = 1000000;
+        for (int i = 0; i < testTimes; i++) {
+            int curLimit = (int) (Math.random() * limit) + 1;
+            MyMaxHeap my = new MyMaxHeap(curLimit);
+            RightMaxHeap test = new RightMaxHeap(curLimit);
+            int curOpTimes = (int) (Math.random() * limit);
+            for (int j = 0; j < curOpTimes; j++) {
+                if (my.isEmpty() != test.isEmpty()) {
+                    System.out.println("Oops!");
+                }
+                if (my.isFull() != test.isFull()) {
+                    System.out.println("Oops!");
+                }
+                if (my.isEmpty()) {
+                    int curValue = (int) (Math.random() * value);
+                    my.push(curValue);
+                    test.push(curValue);
+                } else if (my.isFull()) {
+                    if (my.pop() != test.pop()) {
+                        System.out.println("Oops!");
+                    }
+                } else {
+                    if (Math.random() < 0.5) {
+                        int curValue = (int) (Math.random() * value);
+                        my.push(curValue);
+                        test.push(curValue);
+                    } else {
+                        if (my.pop() != test.pop()) {
+                            System.out.println("Oops!");
+                        }
+                    }
+                }
+            }
+        }
+        System.out.println("finish!");
+
+    }
+
     public static class MyMaxHeap {
+
         private int[] heap;
         private final int limit;
         private int heapSize;
@@ -42,11 +104,7 @@ public class Code02_Heap {
             return ans;
         }
 
-        
-        
-        
-        
-        
+
         // 新加进来的数，现在停在了index位置，请依次往上移动，
         // 移动到0位置，或者干不掉自己的父亲了，停！
         private void heapInsert(int[] arr, int index) {
@@ -85,6 +143,7 @@ public class Code02_Heap {
     }
 
     public static class RightMaxHeap {
+
         private int[] arr;
         private final int limit;
         private int size;
@@ -124,79 +183,12 @@ public class Code02_Heap {
 
     }
 
-    
-    public static class MyComparator implements Comparator<Integer>{
+    public static class MyComparator implements Comparator<Integer> {
 
         @Override
         public int compare(Integer o1, Integer o2) {
             return o2 - o1;
         }
-        
-    }
-    
-    public static void main(String[] args) {
-        // 小根堆
-        PriorityQueue<Integer> heap = new PriorityQueue<>(new MyComparator());
-        heap.add(5);
-        heap.add(5);
-        heap.add(5);
-        heap.add(3);
-        //  5 , 3
-        System.out.println(heap.peek());
-        heap.add(7);
-        heap.add(0);
-        heap.add(7);
-        heap.add(0);
-        heap.add(7);
-        heap.add(0);
-        System.out.println(heap.peek());
-        while(!heap.isEmpty()) {
-            System.out.println(heap.poll());
-        }
-        
-        
-        
-        
-        
-        
-        
-        int value = 1000;
-        int limit = 100;
-        int testTimes = 1000000;
-        for (int i = 0; i < testTimes; i++) {
-            int curLimit = (int) (Math.random() * limit) + 1;
-            MyMaxHeap my = new MyMaxHeap(curLimit);
-            RightMaxHeap test = new RightMaxHeap(curLimit);
-            int curOpTimes = (int) (Math.random() * limit);
-            for (int j = 0; j < curOpTimes; j++) {
-                if (my.isEmpty() != test.isEmpty()) {
-                    System.out.println("Oops!");
-                }
-                if (my.isFull() != test.isFull()) {
-                    System.out.println("Oops!");
-                }
-                if (my.isEmpty()) {
-                    int curValue = (int) (Math.random() * value);
-                    my.push(curValue);
-                    test.push(curValue);
-                } else if (my.isFull()) {
-                    if (my.pop() != test.pop()) {
-                        System.out.println("Oops!");
-                    }
-                } else {
-                    if (Math.random() < 0.5) {
-                        int curValue = (int) (Math.random() * value);
-                        my.push(curValue);
-                        test.push(curValue);
-                    } else {
-                        if (my.pop() != test.pop()) {
-                            System.out.println("Oops!");
-                        }
-                    }
-                }
-            }
-        }
-        System.out.println("finish!");
 
     }
 

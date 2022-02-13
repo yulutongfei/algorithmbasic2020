@@ -7,6 +7,7 @@ import java.util.TreeMap;
 public class HashMapAndSortedMap {
 
     public static class Node {
+
         public int value;
 
         public Node(int v) {
@@ -15,6 +16,7 @@ public class HashMapAndSortedMap {
     }
 
     public static class Zuo {
+
         public int value;
 
         public Zuo(int v) {

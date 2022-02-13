@@ -36,6 +36,7 @@ public class Code01_IndexTree {
     }
 
     public static class Right {
+
         private int[] nums;
         private int N;
 

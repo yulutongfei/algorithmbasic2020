@@ -28,6 +28,7 @@ public class Code04_IPO {
     }
 
     public static class Program {
+
         public int p;
         public int c;
 

@@ -6,6 +6,7 @@ import java.util.List;
 public class Code04_MaxHappy {
 
     public static class Employee {
+
         public int happy;
         public List<Employee> nexts;
 
@@ -52,6 +53,7 @@ public class Code04_MaxHappy {
     }
 
     public static class Info {
+
         public int no;
         public int yes;
 

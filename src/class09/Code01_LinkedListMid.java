@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Code01_LinkedListMid {
 
     public static class Node {
+
         public int value;
         public Node next;
 

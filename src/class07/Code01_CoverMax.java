@@ -47,6 +47,7 @@ public class Code01_CoverMax {
     }
 
     public static class Line {
+
         public int start;
         public int end;
 

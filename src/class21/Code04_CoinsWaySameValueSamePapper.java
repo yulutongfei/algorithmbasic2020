@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 public class Code04_CoinsWaySameValueSamePapper {
 
     public static class Info {
+
         public int[] coins;
         public int[] zhangs;
 

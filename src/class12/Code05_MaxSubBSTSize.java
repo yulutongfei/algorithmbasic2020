@@ -4,14 +4,11 @@ import java.util.ArrayList;
 
 public class Code05_MaxSubBSTSize {
 
-    public static class Node {
-        public int value;
-        public Node left;
-        public Node right;
-
-        public Node(int data) {
-            this.value = data;
+    public static int maxSubBSTSize2(Node head) {
+        if (head == null) {
+            return 0;
         }
+        return process(head).maxBSTSubtreeSize;
     }
 
     public static int getBSTSize(Node head) {
@@ -145,14 +142,19 @@ public class Code05_MaxSubBSTSize {
 //        return new Info(isAllBST, maxSubBSTSize, min, max);
 //    }
 
-    public static int maxSubBSTSize2(Node head) {
-        if(head == null) {
-            return 0;
+    public static class Node {
+
+        public int value;
+        public Node left;
+        public Node right;
+
+        public Node(int data) {
+            this.value = data;
         }
-        return process(head).maxBSTSubtreeSize;
     }
 
     public static class Info {
+
         public int maxBSTSubtreeSize;
         public int allSize;
         public int max;

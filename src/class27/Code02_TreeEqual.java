@@ -4,14 +4,21 @@ import java.util.ArrayList;
 
 public class Code02_TreeEqual {
 
-    public static class Node {
-        public int value;
-        public Node left;
-        public Node right;
-
-        public Node(int v) {
-            value = v;
+    public static boolean isSameValueStructure(Node head1, Node head2) {
+        if (head1 == null && head2 != null) {
+            return false;
         }
+        if (head1 != null && head2 == null) {
+            return false;
+        }
+        if (head1 == null && head2 == null) {
+            return true;
+        }
+        if (head1.value != head2.value) {
+            return false;
+        }
+        return isSameValueStructure(head1.left, head2.left)
+                && isSameValueStructure(head1.right, head2.right);
     }
 
     public static boolean containsTree1(Node big, Node small) {
@@ -27,21 +34,25 @@ public class Code02_TreeEqual {
         return containsTree1(big.left, small) || containsTree1(big.right, small);
     }
 
-    public static boolean isSameValueStructure(Node head1, Node head2) {
-        if (head1 == null && head2 != null) {
-            return false;
+    public static int[] getNextArray(String[] ms) {
+        if (ms.length == 1) {
+            return new int[]{-1};
         }
-        if (head1 != null && head2 == null) {
-            return false;
+        int[] next = new int[ms.length];
+        next[0] = -1;
+        next[1] = 0;
+        int i = 2;
+        int cn = 0;
+        while (i < next.length) {
+            if (isEqual(ms[i - 1], ms[cn])) {
+                next[i++] = ++cn;
+            } else if (cn > 0) {
+                cn = next[cn];
+            } else {
+                next[i++] = 0;
+            }
         }
-        if (head1 == null && head2 == null) {
-            return true;
-        }
-        if (head1.value != head2.value) {
-            return false;
-        }
-        return isSameValueStructure(head1.left, head2.left) 
-                && isSameValueStructure(head1.right, head2.right);
+        return next;
     }
 
     public static boolean containsTree2(Node big, Node small) {
@@ -101,25 +112,15 @@ public class Code02_TreeEqual {
         return y == str2.length ? x - y : -1;
     }
 
-    public static int[] getNextArray(String[] ms) {
-        if (ms.length == 1) {
-            return new int[] { -1 };
+    public static class Node {
+
+        public int value;
+        public Node left;
+        public Node right;
+
+        public Node(int v) {
+            value = v;
         }
-        int[] next = new int[ms.length];
-        next[0] = -1;
-        next[1] = 0;
-        int i = 2;
-        int cn = 0;
-        while (i < next.length) {
-            if (isEqual(ms[i - 1], ms[cn])) {
-                next[i++] = ++cn;
-            } else if (cn > 0) {
-                cn = next[cn];
-            } else {
-                next[i++] = 0;
-            }
-        }
-        return next;
     }
 
     public static boolean isEqual(String a, String b) {

@@ -20,7 +20,7 @@ public class Code04_BiggerThanRightTwice {
 
     public static int merge(int[] arr, int L, int m, int r) {
         // [L....M]   [M+1....R]
-        
+
         int ans = 0;
         // 目前囊括进来的数，是从[M+1, windowR)
         int windowR = m + 1;
@@ -30,8 +30,8 @@ public class Code04_BiggerThanRightTwice {
             }
             ans += windowR - m - 1;
         }
-        
-        
+
+
         int[] help = new int[r - L + 1];
         int i = 0;
         int p1 = L;

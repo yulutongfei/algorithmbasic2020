@@ -6,6 +6,7 @@ import java.util.Comparator;
 public class Code03_BestArrange {
 
     public static class Program {
+
         public int start;
         public int end;
 
@@ -26,7 +27,7 @@ public class Code03_BestArrange {
     // 还剩下的会议都放在programs里
     // done之前已经安排了多少会议的数量
     // timeLine目前来到的时间点是什么
-    
+
     // 目前来到timeLine的时间点，已经安排了done多的会议，剩下的会议programs可以自由安排
     // 返回能安排的最多会议数量
     public static int process(Program[] programs, int done, int timeLine) {

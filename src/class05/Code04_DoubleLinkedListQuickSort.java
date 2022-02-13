@@ -11,6 +11,7 @@ import java.util.Comparator;
 public class Code04_DoubleLinkedListQuickSort {
 
     public static class Node {
+
         public int value;
         public Node last;
         public Node next;
@@ -36,6 +37,7 @@ public class Code04_DoubleLinkedListQuickSort {
     }
 
     public static class HeadTail {
+
         public Node h;
         public Node t;
 
@@ -104,6 +106,7 @@ public class Code04_DoubleLinkedListQuickSort {
     }
 
     public static class Info {
+
         public Node lh;
         public Node lt;
         public int ls;

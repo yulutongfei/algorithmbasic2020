@@ -25,7 +25,6 @@ public class Code05_Prim {
         HashSet<Node> nodeSet = new HashSet<>();
 
 
-
         Set<Edge> result = new HashSet<>(); // 依次挑选的的边在result里
 
         for (Node node : graph.nodes.values()) { // 随便挑了一个点

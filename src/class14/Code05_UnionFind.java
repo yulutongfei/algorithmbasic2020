@@ -7,6 +7,7 @@ import java.util.Stack;
 public class Code05_UnionFind {
 
     public static class Node<V> {
+
         V value;
 
         public Node(V v) {
@@ -15,6 +16,7 @@ public class Code05_UnionFind {
     }
 
     public static class UnionFind<V> {
+
         public HashMap<V, Node<V>> nodes;
         public HashMap<Node<V>, Node<V>> parents;
         public HashMap<Node<V>, Integer> sizeMap;

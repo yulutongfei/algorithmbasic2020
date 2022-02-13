@@ -3,6 +3,7 @@ package class12;
 public class Code04_IsFull {
 
     public static class Node {
+
         public int value;
         public Node left;
         public Node right;
@@ -44,6 +45,7 @@ public class Code04_IsFull {
     }
 
     public static class Info {
+
         public int height;
         public int nodes;
 

@@ -7,10 +7,10 @@ public class Code03_QuickSortRecursiveAndUnrecursive {
     // 荷兰国旗问题
     public static int[] netherlandsFlag(int[] arr, int L, int R) {
         if (L > R) {
-            return new int[] { -1, -1 };
+            return new int[]{-1, -1};
         }
         if (L == R) {
-            return new int[] { L, R };
+            return new int[]{L, R};
         }
         int less = L - 1;
         int more = R;
@@ -25,7 +25,7 @@ public class Code03_QuickSortRecursiveAndUnrecursive {
             }
         }
         swap(arr, more, R);
-        return new int[] { less + 1, more };
+        return new int[]{less + 1, more};
     }
 
     public static void swap(int[] arr, int i, int j) {
@@ -55,6 +55,7 @@ public class Code03_QuickSortRecursiveAndUnrecursive {
     // 快排非递归版本需要的辅助类
     // 要处理的是什么范围上的排序
     public static class Op {
+
         public int l;
         public int r;
 

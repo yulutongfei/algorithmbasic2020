@@ -7,6 +7,7 @@ public class Code01_TrieTree {
 
     // 前缀树节点类型
     public static class Node1 {
+
         public int pass;
         public int end;
         public Node1[] nexts;
@@ -19,6 +20,7 @@ public class Code01_TrieTree {
     }
 
     public static class Trie1 {
+
         private Node1 root;
 
         public Trie1() {
@@ -100,6 +102,7 @@ public class Code01_TrieTree {
     }
 
     public static class Node2 {
+
         public int pass;
         public int end;
         public HashMap<Integer, Node2> nexts;
@@ -112,6 +115,7 @@ public class Code01_TrieTree {
     }
 
     public static class Trie2 {
+
         private Node2 root;
 
         public Trie2() {

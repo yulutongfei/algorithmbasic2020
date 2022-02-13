@@ -34,10 +34,10 @@ public class Code02_PartitionAndQuickSort {
     // <arr[R] ==arr[R] > arr[R]
     public static int[] netherlandsFlag(int[] arr, int L, int R) {
         if (L > R) { // L...R L>R
-            return new int[] { -1, -1 };
+            return new int[]{-1, -1};
         }
         if (L == R) {
-            return new int[] { L, R };
+            return new int[]{L, R};
         }
         int less = L - 1; // < 区 右边界
         int more = R; // > 区 左边界
@@ -55,7 +55,7 @@ public class Code02_PartitionAndQuickSort {
             }
         }
         swap(arr, more, R); // <[R]   =[R]   >[R]
-        return new int[] { less + 1, more };
+        return new int[]{less + 1, more};
     }
 
     public static void quickSort1(int[] arr) {
@@ -75,11 +75,7 @@ public class Code02_PartitionAndQuickSort {
         process1(arr, M + 1, R);
     }
 
-    
-    
-    
-    
-    
+
     public static void quickSort2(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;
@@ -98,12 +94,7 @@ public class Code02_PartitionAndQuickSort {
         process2(arr, equalArea[1] + 1, R);
     }
 
-    
-    
-    
-    
-    
-    
+
     public static void quickSort3(int[] arr) {
         if (arr == null || arr.length < 2) {
             return;

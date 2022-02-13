@@ -35,7 +35,7 @@ public class Code03_IsRotation {
 
     public static int[] getNextArray(char[] ms) {
         if (ms.length == 1) {
-            return new int[] { -1 };
+            return new int[]{-1};
         }
         int[] next = new int[ms.length];
         next[0] = -1;

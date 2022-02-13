@@ -3,6 +3,7 @@ package class11;
 public class Code06_SuccessorNode {
 
     public static class Node {
+
         public int value;
         public Node left;
         public Node right;

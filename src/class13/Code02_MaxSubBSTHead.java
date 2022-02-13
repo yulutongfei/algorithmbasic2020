@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Code02_MaxSubBSTHead {
 
     public static class Node {
+
         public int value;
         public Node left;
         public Node right;
@@ -58,6 +59,7 @@ public class Code02_MaxSubBSTHead {
 
     // 每一棵子树
     public static class Info {
+
         public Node maxSubBSTHead;
         public int maxSubBSTSize;
         public int min;

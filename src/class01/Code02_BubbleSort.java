@@ -84,7 +84,7 @@ public class Code02_BubbleSort {
     }
 
     // for test
-    public static void main(String[] args) {        
+    public static void main(String[] args) {
         int testTime = 500000;
         int maxSize = 100;
         int maxValue = 100;

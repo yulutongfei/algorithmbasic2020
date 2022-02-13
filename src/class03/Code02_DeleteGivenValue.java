@@ -3,6 +3,7 @@ package class03;
 public class Code02_DeleteGivenValue {
 
     public static class Node {
+
         public int value;
         public Node next;
 

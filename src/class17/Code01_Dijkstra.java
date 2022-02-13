@@ -45,6 +45,7 @@ public class Code01_Dijkstra {
     }
 
     public static class NodeRecord {
+
         public Node node;
         public int distance;
 
@@ -55,10 +56,11 @@ public class Code01_Dijkstra {
     }
 
     public static class NodeHeap {
+
         // 堆！
         private Node[] nodes;
         // node -> 堆上的什么位置？
-        
+
         private HashMap<Node, Integer> heapIndexMap;
         private HashMap<Node, Integer> distanceMap;
         private int size;

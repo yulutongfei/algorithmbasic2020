@@ -1,8 +1,8 @@
 package class24;
 
 import java.util.HashMap;
-import java.util.Map.Entry;
 import java.util.LinkedList;
+import java.util.Map.Entry;
 
 public class Code04_MinCoinsOnePaper {
 
@@ -51,6 +51,7 @@ public class Code04_MinCoinsOnePaper {
     }
 
     public static class Info {
+
         public int[] coins;
         public int[] zhangs;
 

@@ -1,18 +1,13 @@
 package class16;
 
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.PriorityQueue;
-import java.util.Set;
-import java.util.Stack;
+import java.util.*;
 
 //undirected graph only
 public class Code04_Kruskal {
 
     // Union-Find Set
     public static class UnionFind {
+
         // key 某一个节点， value key节点往上的节点
         private HashMap<Node, Node> fatherMap;
         // key 某一个集合的代表节点, value key所在集合的节点个数
@@ -22,7 +17,7 @@ public class Code04_Kruskal {
             fatherMap = new HashMap<Node, Node>();
             sizeMap = new HashMap<Node, Integer>();
         }
-        
+
         public void makeSets(Collection<Node> nodes) {
             fatherMap.clear();
             sizeMap.clear();
@@ -34,11 +29,11 @@ public class Code04_Kruskal {
 
         private Node findFather(Node n) {
             Stack<Node> path = new Stack<>();
-            while(n != fatherMap.get(n)) {
+            while (n != fatherMap.get(n)) {
                 path.add(n);
                 n = fatherMap.get(n);
             }
-            while(!path.isEmpty()) {
+            while (!path.isEmpty()) {
                 fatherMap.put(path.pop(), n);
             }
             return n;
@@ -69,7 +64,7 @@ public class Code04_Kruskal {
             }
         }
     }
-    
+
 
     public static class EdgeComparator implements Comparator<Edge> {
 

@@ -158,7 +158,7 @@ public class Code04_MoneyProblem {
             long ans1 = func1(d, p);
             long ans2 = func2(d, p);
             long ans3 = func3(d, p);
-            long ans4 = minMoney2(d,p);
+            long ans4 = minMoney2(d, p);
             if (ans1 != ans2 || ans2 != ans3 || ans1 != ans4) {
                 System.out.println("oops!");
             }

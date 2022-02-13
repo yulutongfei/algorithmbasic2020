@@ -8,6 +8,7 @@ import java.util.List;
 public class Code02_EveryStepShowBoss {
 
     public static class Customer {
+
         public int id;
         public int buy;
         public int enterTime;
@@ -38,6 +39,7 @@ public class Code02_EveryStepShowBoss {
     }
 
     public static class WhosYourDaddy {
+
         private HashMap<Integer, Customer> customers;
         private HeapGreater<Customer> candHeap;
         private HeapGreater<Customer> daddyHeap;
@@ -230,6 +232,7 @@ public class Code02_EveryStepShowBoss {
 
     // 为了测试
     public static class Data {
+
         public int[] arr;
         public boolean[] op;
 

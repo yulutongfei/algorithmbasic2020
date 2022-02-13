@@ -59,6 +59,7 @@ public class Code03_Coffee {
 
     // 以下为贪心+优良暴力
     public static class Machine {
+
         public int timePoint;
         public int workTime;
 

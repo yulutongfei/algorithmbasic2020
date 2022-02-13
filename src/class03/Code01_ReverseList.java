@@ -6,6 +6,7 @@ import java.util.List;
 public class Code01_ReverseList {
 
     public static class Node {
+
         public int value;
         public Node next;
 
@@ -15,6 +16,7 @@ public class Code01_ReverseList {
     }
 
     public static class DoubleNode {
+
         public int value;
         public DoubleNode last;
         public DoubleNode next;

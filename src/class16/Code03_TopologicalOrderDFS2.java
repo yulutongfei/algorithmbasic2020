@@ -9,6 +9,7 @@ public class Code03_TopologicalOrderDFS2 {
 
     // 不要提交这个类
     public static class DirectedGraphNode {
+
         public int label;
         public ArrayList<DirectedGraphNode> neighbors;
 
@@ -20,6 +21,7 @@ public class Code03_TopologicalOrderDFS2 {
 
     // 提交下面的
     public static class Record {
+
         public DirectedGraphNode node;
         public long nodes;
 

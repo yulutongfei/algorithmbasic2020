@@ -5,6 +5,7 @@ import java.util.Stack;
 public class Code06_TwoStacksImplementQueue {
 
     public static class TwoStacksQueue {
+
         public Stack<Integer> stackPush;
         public Stack<Integer> stackPop;
 

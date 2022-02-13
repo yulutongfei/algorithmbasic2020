@@ -135,7 +135,7 @@ public class Code02_MaxTopK {
                 cur++;
             }
         }
-        return new int[] { less + 1, more - 1 };
+        return new int[]{less + 1, more - 1};
     }
 
     // for test

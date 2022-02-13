@@ -27,6 +27,7 @@ public class Code05_HuffmanTree {
     }
 
     public static class Node {
+
         public int count;
         public Node left;
         public Node right;
@@ -139,6 +140,7 @@ public class Code05_HuffmanTree {
     }
 
     public static class TrieNode {
+
         public char value;
         public TrieNode[] nexts;
 

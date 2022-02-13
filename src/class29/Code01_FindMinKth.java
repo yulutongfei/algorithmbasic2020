@@ -77,7 +77,7 @@ public class Code01_FindMinKth {
                 cur++;
             }
         }
-        return new int[] { less + 1, more - 1 };
+        return new int[]{less + 1, more - 1};
     }
 
     public static void swap(int[] arr, int i1, int i2) {

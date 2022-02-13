@@ -3,6 +3,7 @@ package class35;
 public class Code01_AVLTreeMap {
 
     public static class AVLNode<K extends Comparable<K>, V> {
+
         public K k;
         public V v;
         public AVLNode<K, V> l;
@@ -17,6 +18,7 @@ public class Code01_AVLTreeMap {
     }
 
     public static class AVLTreeMap<K extends Comparable<K>, V> {
+
         private AVLNode<K, V> root;
         private int size;
 

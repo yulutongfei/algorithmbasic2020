@@ -9,6 +9,7 @@ public class Code04_AC2 {
 
     // 前缀树的节点
     public static class Node {
+
         // 如果一个node，end为空，不是结尾
         // 如果end不为空，表示这个点是某个字符串的结尾，end的值就是这个字符串
         public String end;
@@ -27,6 +28,7 @@ public class Code04_AC2 {
     }
 
     public static class ACAutomation {
+
         private Node root;
 
         public ACAutomation() {

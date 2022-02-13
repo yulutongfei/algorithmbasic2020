@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Code03_AddRemoveGetIndexGreat {
 
     public static class SBTNode<V> {
+
         public V value;
         public SBTNode<V> l;
         public SBTNode<V> r;
@@ -17,6 +18,7 @@ public class Code03_AddRemoveGetIndexGreat {
     }
 
     public static class SbtList<V> {
+
         private SBTNode<V> root;
 
         private SBTNode<V> rightRotate(SBTNode<V> cur) {

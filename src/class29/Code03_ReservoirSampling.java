@@ -3,6 +3,7 @@ package class29;
 public class Code03_ReservoirSampling {
 
     public static class RandomBox {
+
         private int[] bag;
         private int N;
         private int count;

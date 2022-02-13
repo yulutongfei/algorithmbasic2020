@@ -3,6 +3,7 @@ package class30;
 public class Code05_MinHeight {
 
     public static class Node {
+
         public int val;
         public Node left;
         public Node right;

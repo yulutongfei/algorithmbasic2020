@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Code02_IsBST {
 
     public static class Node {
+
         public int value;
         public Node left;
         public Node right;
@@ -45,6 +46,7 @@ public class Code02_IsBST {
     }
 
     public static class Info {
+
         public boolean isBST;
         public int max;
         public int min;

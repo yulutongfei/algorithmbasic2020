@@ -68,7 +68,7 @@ public class Code02_SnacksWays {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 4, 3, 2, 9 };
+        int[] arr = {4, 3, 2, 9};
         int w = 8;
         System.out.println(ways1(arr, w));
         System.out.println(ways2(arr, w));

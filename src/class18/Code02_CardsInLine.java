@@ -106,7 +106,7 @@ public class Code02_CardsInLine {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 5, 7, 4, 5, 8, 1, 6, 0, 3, 4, 6, 1, 7 };
+        int[] arr = {5, 7, 4, 5, 8, 1, 6, 0, 3, 4, 6, 1, 7};
         System.out.println(win1(arr));
         System.out.println(win2(arr));
         System.out.println(win3(arr));

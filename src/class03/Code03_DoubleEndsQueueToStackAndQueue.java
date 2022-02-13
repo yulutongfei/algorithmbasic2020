@@ -7,6 +7,7 @@ import java.util.Stack;
 public class Code03_DoubleEndsQueueToStackAndQueue {
 
     public static class Node<T> {
+
         public T value;
         public Node<T> last;
         public Node<T> next;
@@ -17,6 +18,7 @@ public class Code03_DoubleEndsQueueToStackAndQueue {
     }
 
     public static class DoubleEndsQueue<T> {
+
         public Node<T> head;
         public Node<T> tail;
 
@@ -83,6 +85,7 @@ public class Code03_DoubleEndsQueueToStackAndQueue {
     }
 
     public static class MyStack<T> {
+
         private DoubleEndsQueue<T> queue;
 
         public MyStack() {
@@ -104,6 +107,7 @@ public class Code03_DoubleEndsQueueToStackAndQueue {
     }
 
     public static class MyQueue<T> {
+
         private DoubleEndsQueue<T> queue;
 
         public MyQueue() {

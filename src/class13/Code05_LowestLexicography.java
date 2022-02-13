@@ -48,6 +48,7 @@ public class Code05_LowestLexicography {
     }
 
     public static class MyComparator implements Comparator<String> {
+
         @Override
         public int compare(String a, String b) {
             return (a + b).compareTo(b + a);

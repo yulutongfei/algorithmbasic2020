@@ -3,6 +3,7 @@ package class37;
 public class Code02_SlidingWindowMedian {
 
     public static class SBTNode<K extends Comparable<K>> {
+
         public K key;
         public SBTNode<K> l;
         public SBTNode<K> r;
@@ -15,6 +16,7 @@ public class Code02_SlidingWindowMedian {
     }
 
     public static class SizeBalancedTreeMap<K extends Comparable<K>> {
+
         private SBTNode<K> root;
 
         private SBTNode<K> rightRotate(SBTNode<K> cur) {
@@ -188,6 +190,7 @@ public class Code02_SlidingWindowMedian {
     }
 
     public static class Node implements Comparable<Node> {
+
         public int index;
         public int value;
 

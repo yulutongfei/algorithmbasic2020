@@ -41,7 +41,7 @@ public class Code05_CountSubmatricesWithAllOnes {
         }
         while (si != -1) {
             int cur = stack[si--];
-            int left = si == -1  ? -1 : stack[si];
+            int left = si == -1 ? -1 : stack[si];
             int n = height.length - left - 1;
             int down = left == -1 ? 0 : height[left];
             nums += (height[cur] - down) * num(n);

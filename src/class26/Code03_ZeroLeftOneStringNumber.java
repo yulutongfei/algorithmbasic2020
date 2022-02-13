@@ -44,16 +44,12 @@ public class Code03_ZeroLeftOneStringNumber {
         if (n == 1 || n == 2) {
             return n;
         }
-        int[][] base = { { 1, 1 }, { 1, 0 } };
+        int[][] base = {{1, 1}, {1, 0}};
         int[][] res = matrixPower(base, n - 2);
         return 2 * res[0][0] + res[1][0];
     }
-    
-    
-    
-    
-    
-    
+
+
     public static int fi(int n) {
         if (n < 1) {
             return 0;
@@ -61,15 +57,13 @@ public class Code03_ZeroLeftOneStringNumber {
         if (n == 1 || n == 2) {
             return 1;
         }
-        int[][] base = { { 1, 1 }, 
-                         { 1, 0 } };
+        int[][] base = {{1, 1},
+                {1, 0}};
         int[][] res = matrixPower(base, n - 2);
         return res[0][0] + res[1][0];
     }
 
-    
-    
-    
+
     public static int[][] matrixPower(int[][] m, int p) {
         int[][] res = new int[m.length][m[0].length];
         for (int i = 0; i < res.length; i++) {

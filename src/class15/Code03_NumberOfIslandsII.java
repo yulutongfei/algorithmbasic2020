@@ -19,6 +19,7 @@ public class Code03_NumberOfIslandsII {
     }
 
     public static class UnionFind1 {
+
         private int[] parent;
         private int[] size;
         private int[] help;
@@ -102,6 +103,7 @@ public class Code03_NumberOfIslandsII {
     }
 
     public static class UnionFind2 {
+
         private HashMap<String, String> parent;
         private HashMap<String, Integer> size;
         private ArrayList<String> help;

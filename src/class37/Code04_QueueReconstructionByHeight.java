@@ -50,6 +50,7 @@ public class Code04_QueueReconstructionByHeight {
     }
 
     public static class Unit {
+
         public int h;
         public int k;
 
@@ -69,6 +70,7 @@ public class Code04_QueueReconstructionByHeight {
     }
 
     public static class SBTNode {
+
         public int value;
         public SBTNode l;
         public SBTNode r;
@@ -81,6 +83,7 @@ public class Code04_QueueReconstructionByHeight {
     }
 
     public static class SBTree {
+
         private SBTNode root;
 
         private SBTNode rightRotate(SBTNode cur) {
