@@ -5,33 +5,13 @@ import java.util.HashMap;
 // 该程序完全正确
 public class Code02_TrieTree {
 
-    public static class Node1 {
 
-        public int pass;
-        public int end;
-        public Node1[] nexts;
-
-        // char tmp = 'b'  (tmp - 'a')
-        public Node1() {
-            pass = 0;
-            end = 0;
-            // 0    a
-            // 1    b
-            // 2    c
-            // ..   ..
-            // 25   z
-            // nexts[i] == null   i方向的路不存在
-            // nexts[i] != null   i方向的路存在
-            nexts = new Node1[26];
-        }
-    }
 
     public static class Trie1 {
 
-        private Node1 root;
 
         public Trie1() {
-            root = new Node1();
+
         }
 
         public void insert(String word) {
@@ -53,25 +33,13 @@ public class Code02_TrieTree {
         }
     }
 
-    public static class Node2 {
 
-        public int pass;
-        public int end;
-        public HashMap<Integer, Node2> nexts;
-
-        public Node2() {
-            pass = 0;
-            end = 0;
-            nexts = new HashMap<>();
-        }
-    }
 
     public static class Trie2 {
 
-        private Node2 root;
 
         public Trie2() {
-            root = new Node2();
+
         }
 
         public void insert(String word) {
